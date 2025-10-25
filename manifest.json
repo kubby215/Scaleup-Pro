@@ -1,16 +1,17 @@
-manifest.json
 {
-"name": "ServicePro Marketing Hub",
+"name": "ServicePro",
 "short_name": "ServicePro",
-"description": "All-in-one marketing automation for service businesses",
-"start_url": "./servepro1_5.html",
-"scope": "./",
+"description": "Marketing & booking hub for service businesses — digital cards, QR leads, campaigns and payments.",
+"start_url": "/",
+"scope": "/",
 "display": "standalone",
-"background_color": "#f8fafc",
-"theme_color": "#2563eb",
+"orientation": "portrait",
+"background_color": "#ffffff",
+"theme_color": "#0077cc",
 "icons": [
-{ "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
-{ "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
-{ "src": "./icons/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
-]
+{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+{ "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+],
+"categories": ["business","productivity"],
+"lang": "en-US"
 }
