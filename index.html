@@ -22,7 +22,7 @@
             margin: 0;
             padding: 0;
         }
-        
+        <script> if ('serviceWorker' in navigator) { window.addEventListener('load', function() { navigator.serviceWorker.register('/sw.js').then(function(reg) { console.log('Service Worker registered with scope:', reg.scope); }).catch(function(err) { console.error('Service Worker registration failed:', err); }); }); } </script>
         body {
             font-family: 'Segoe UI', system-ui, sans-serif;
             background: var(--light);
@@ -1120,4 +1120,5 @@
         }
     </script>
 </body>
+
 </html>
