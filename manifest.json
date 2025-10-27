@@ -10,20 +10,6 @@
   "scope": "/",
   "lang": "en-US",
   "categories": ["business", "productivity", "finance"],
-  "screenshots": [
-    {
-      "src": "/screenshots/desktop.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide"
-    },
-    {
-      "src": "/screenshots/mobile.png",
-      "sizes": "750x1334",
-      "type": "image/png",
-      "form_factor": "narrow"
-    }
-  ],
   "icons": [
     {
       "src": "/icons/icon-72x72.png",
@@ -73,49 +59,5 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
-  ],
-  "shortcuts": [
-    {
-      "name": "Dashboard",
-      "short_name": "Dashboard",
-      "description": "View your business dashboard",
-      "url": "/#dashboard",
-      "icons": [
-        {
-          "src": "/icons/dashboard-icon.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
-    },
-    {
-      "name": "Pricing",
-      "short_name": "Pricing",
-      "description": "View pricing plans",
-      "url": "/#pricing",
-      "icons": [
-        {
-          "src": "/icons/pricing-icon.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
-    },
-    {
-      "name": "Setup Guide",
-      "short_name": "Setup",
-      "description": "Get started with setup guide",
-      "url": "/#setup-guide",
-      "icons": [
-        {
-          "src": "/icons/setup-icon.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
-    }
-  ],
-  "edge_side_panel": {
-    "preferred_width": 400
-  }
+  ]
 }
