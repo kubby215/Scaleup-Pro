@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/82dd82fa-ade8-4345-b7b7-bb53440ab587/resourceGroups/ScaleUpPro_group/providers/Microsoft.Web/sites/servicepro",
+    "appService.deploySubpath": "."
+}
