@@ -1,0 +1,43 @@
+System.InvalidOperationException: The requested operation requires an element of type 'Object', but the target element has type 'Null'.
+   at System.Text.Json.ThrowHelper.ThrowJsonElementWrongTypeException(JsonTokenType expectedType, JsonTokenType actualType)
+   at System.Text.Json.JsonDocument.TryGetNamedPropertyValue(Int32 index, ReadOnlySpan`1 propertyName, JsonElement& value)
+   at PWABuilder.MicrosoftStore.Models.WebAppManifestContext.From(JsonDocument manifest, Uri manifestUri) in C:\app\Models\WebAppManifestContext.cs:line 43
+   at PWABuilder.MicrosoftStore.WebManifestFinder.Find(WindowsAppPackageOptions options) in C:\app\Services\WebManifestFinder.cs:line 98
+   at PWABuilder.MicrosoftStore.Services.WindowsAppPackageCreator.GenerateZipAsync(WindowsAppPackageOptions options, CancellationToken cancelToken) in C:\app\Services\WindowsAppPackageCreator.cs:line 174
+   at PWABuilder.MicrosoftStore.Services.WindowsAppPackageCreator.CreateAppPackageAsync(WindowsAppPackageOptions options, AnalyticsInfo analyticsInfo, CancellationToken cancelToken) in C:\app\Services\WindowsAppPackageCreator.cs:line 82
+   at PWABuilder.MicrosoftStore.Controllers.MsixController.CreateAppPackageAsync(WindowsAppPackageOptions options, HttpContext httpContext, CancellationToken cancelToken) in C:\app\Controllers\MsixController.cs:line 155
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+HEADERS
+=======
+Accept: */*
+Host: pwabuilder-windows-docker.azurewebsites.net
+User-Agent: node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Max-Forwards: 10
+Content-Length: 218
+Platform-Identifier: PWAStudio
+Correlation-Id: d4e75263-8394-47ef-a7ee-54e9dd5f9cc11761660230956
+X-ARR-LOG-ID: 4adfec80-aa0c-4752-b3f7-76586d60a192
+CLIENT-IP: 73.188.162.249:54576
+DISGUISED-HOST: pwabuilder-windows-docker.azurewebsites.net
+X-SITE-DEPLOYMENT-ID: pwabuilder-windows-docker__43a5
+WAS-DEFAULT-HOSTNAME: pwabuilder-windows-docker.azurewebsites.net
+X-Forwarded-Proto: https
+X-AppService-Proto: https
+X-ARR-SSL: 2048|256|CN=Microsoft Azure RSA TLS Issuing CA 03, O=Microsoft Corporation, C=US|CN=*.azurewebsites.net, O=Microsoft Corporation, L=Redmond, S=WA, C=US
+X-Forwarded-TlsVersion: 1.3
+X-Forwarded-For: 73.188.162.249:54576
+X-Original-URL: /msix/generatezip
+X-WAWS-Unencoded-URL: /msix/generatezip
